@@ -253,14 +253,14 @@ define("orion/editor/textTheme", //$NON-NLS-0$
 			if (href.substring(href.length - extension.length) !== extension) {
 				href += extension;
 			}
-			if (/^\//.test(href) || /[a-zA-Z0-9]+:\/\//i.test(href) || !require.toUrl /* almond cannot load dynamically */) {
-				this._createStyle(className, href, callback, true);
-			} else {
-				var self = this;
-				require(["text!" + href], function(cssText) { //$NON-NLS-0$
-					self._createStyle(className, cssText, callback, false);
-				});
-			}
+//			if (/^\//.test(href) || /[a-zA-Z0-9]+:\/\//i.test(href) || !require.toUrl /* almond cannot load dynamically */) {
+//				this._createStyle(className, href, callback, true);
+//			} else {
+//				var self = this;
+//				require(["text!" + href], function(cssText) { //$NON-NLS-0$
+//					self._createStyle(className, cssText, callback, false);
+//				});
+//			}
 		}
 	};
 	mEventTarget.EventTarget.addMixin(TextTheme.prototype);
