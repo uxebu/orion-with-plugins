@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin(options),
-    new I18nPlugin(require("null"))
+    new I18nPlugin(null)
   ],
   loaders: [
     { test: /\.css$/, loaders: ["style", "css"] }
@@ -21,7 +21,13 @@ module.exports = {
   resolve: {
     alias: {
       orion: path.join(__dirname, 'orion'),
-      webtools: path.join(__dirname, 'webtools')
+      webtools: path.join(__dirname, 'webtools'),
+      keyBinding: path.join(__dirname, 'orion/keyBinding'),
+      util: path.join(__dirname, 'orion/util'),
+      regex: path.join(__dirname, 'orion/regex'),
+      objects: path.join(__dirname, 'orion/objects'),
+      defender: path.join(__dirname, 'orion/Deferred'),
+      webui: path.join(__dirname, 'orion/webui/littlelib')
     }
   }
 };
