@@ -281,19 +281,19 @@ define('orion/editor/edit', [ //$NON-NLS-0$
 				var annotationModel = editor.getAnnotationModel();
 				if (contentType) {
 					contentType = contentType.replace(/[*|:/".<>?+]/g, '_');
-					require(["./stylers/" + contentType + "/syntax"], //$NON-NLS-1$ //$NON-NLS-0$
-						function(grammar) {
-							var stylerAdapter = new mTextStyler.createPatternBasedAdapter(grammar.grammars, grammar.id);
+//					require(["./stylers/application_javascript/syntax"], //$NON-NLS-1$ //$NON-NLS-0$
+//						function(grammar) {
+							var stylerAdapter = new mTextStyler.createPatternBasedAdapter(mJS.grammars, mJS.id);
 							this.styler = new mTextStyler.TextStyler(textView, annotationModel, stylerAdapter);
-						},
-						function(error) {
+//						},
+//						function(error) {
 							/*
 							 * A grammar file was not found for the specified contentType, so syntax styling will
 							 * not be shown (the editor will still work fine otherwise).  requireJS has already
 							 * written an error message to the console regarding the missing grammar file.
 							 */
-						}
-					);
+//						}
+//					);
 				}
 				if (contentType === "text/css") { //$NON-NLS-0$
 					editor.setFoldingRulerVisible(options.showFoldingRuler === undefined || options.showFoldingRuler);
