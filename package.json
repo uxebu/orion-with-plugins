@@ -1,0 +1,29 @@
+{
+  "name": "orion-with-plugins",
+  "version": "0.0.1",
+  "description": "orion with addtional plugins",
+  "main": " ",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uxebu/orion-with-plugins.git"
+  },
+  "keywords": [
+    "orion"
+  ],
+  "author": "Georg Lang <lang@uxebu.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uxebu/orion-with-plugins/issues"
+  },
+  "homepage": "https://github.com/uxebu/orion-with-plugins",
+  "dependencies": {
+    "i18n-webpack-plugin": "^0.2.3",
+    "webpack": "^1.4.0-beta5"
+  }
+}
