@@ -14,7 +14,7 @@
 
 /*eslint-env browser, amd*/
 define("orion/editor/textView", [ //$NON-NLS-0$
-	'i18n!orion/editor/nls/messages', //$NON-NLS-0$
+//	'i18n!orion/editor/nls/messages', //$NON-NLS-0$
 	'orion/editor/textModel', //$NON-NLS-0$
 	'orion/editor/keyModes', //$NON-NLS-0$
 	'orion/editor/eventTarget', //$NON-NLS-0$

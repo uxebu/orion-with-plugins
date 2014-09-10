@@ -13,7 +13,7 @@
 
 /*eslint-env browser, amd*/
 
-define(['orion/editor/i18n!orion/editor/nls/messages', 'orion/editor/nls/root/messages'], function(bundle, root) {
+define([/*'orion/editor/i18n!orion/editor/nls/messages',*/ 'orion/editor/nls/root/messages'], function(bundle, root) {
 	var result = {
 		root: root
 	};

@@ -10,7 +10,7 @@
  ******************************************************************************/
 /*eslint-env browser, amd*/
 define("orion/editor/vi", [ //$NON-NLS-0$
-		"i18n!orion/editor/nls/messages", //$NON-NLS-0$
+//		"i18n!orion/editor/nls/messages", //$NON-NLS-0$
 		"orion/editor/keyModes", //$NON-NLS-0$
 		"orion/keyBinding",  //$NON-NLS-0$
 		"orion/util" //$NON-NLS-0$

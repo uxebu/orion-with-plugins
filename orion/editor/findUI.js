@@ -11,7 +11,7 @@
  ******************************************************************************/
 /*eslint-env browser, amd*/
 define([
-	'i18n!orion/editor/nls/messages',
+//	'i18n!orion/editor/nls/messages',
 	'orion/editor/find',
 	'orion/objects',
 	'orion/editor/util',

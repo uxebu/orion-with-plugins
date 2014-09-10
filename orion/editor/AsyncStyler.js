@@ -9,7 +9,7 @@
  * Contributors: IBM Corporation - initial API and implementation 
  ******************************************************************************/
 /*eslint-env browser, amd*/
-define("orion/editor/AsyncStyler", ['i18n!orion/editor/nls/messages', 'orion/editor/annotations'], function(messages, mAnnotations) {
+define("orion/editor/AsyncStyler", [/*'i18n!orion/editor/nls/messages'*/, 'orion/editor/annotations'], function(messages, mAnnotations) {
 	var SERVICE_NAME = "orion.edit.highlighter";
 	var HIGHLIGHT_ERROR_ANNOTATION = "orion.annotation.highlightError";
 	var badServiceError = SERVICE_NAME + " service must be an event emitter";

@@ -11,7 +11,7 @@
 
 /*eslint-env browser, amd*/
 define("orion/editor/tooltip", [ //$NON-NLS-0$
-	'i18n!orion/editor/nls/messages', //$NON-NLS-0$
+//	'i18n!orion/editor/nls/messages', //$NON-NLS-0$
 	'orion/editor/textView', //$NON-NLS-0$
 	'orion/editor/textModel', //$NON-NLS-0$
 	'orion/editor/projectionTextModel', //$NON-NLS-0$
