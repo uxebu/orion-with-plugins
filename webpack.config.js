@@ -1,4 +1,6 @@
 var I18nPlugin = require('i18n-webpack-plugin');
+var ContextReplacementPlugin = require("webpack/lib/ContextReplacementPlugin");
+
 var path = require('path');
 var webpack = require('webpack');
 
@@ -13,7 +15,11 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin(options),
-    new I18nPlugin(null)
+    new I18nPlugin(null),
+    new ContextReplacementPlugin(
+        /..stylers/,
+        './stylers/application_javascript/syntax'
+    )
   ],
   loaders: [
     { test: /\.css$/, loaders: ["style", "css"] }
