@@ -17,7 +17,7 @@ module.exports = {
     new webpack.optimize.LimitChunkCountPlugin(options),
     new I18nPlugin(null),
     new ContextReplacementPlugin(
-        /..stylers/,
+        /..stylers\/(application_|text_)(javascript|html|css)\/syntax/,
         './stylers/application_javascript/syntax'
     )
   ],
